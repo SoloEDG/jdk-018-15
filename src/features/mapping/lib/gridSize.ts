@@ -1,3 +1,4 @@
+/** 列数模式：保持原有行列换算与边界行为不变 */
 export function gridSize(width: number, height: number, columns: number) {
   const n = Math.round(Math.max(30, Math.min(220, columns)));
   const rows = Math.max(1, Math.round((height / width) * n * 0.5));
